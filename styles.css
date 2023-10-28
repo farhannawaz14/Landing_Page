@@ -1,0 +1,210 @@
+
+
+/* Reset some default styles and apply basic styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+.main{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.nav{
+  height: 80px;
+  width: 100%;
+  /* border-bottom: 2px solid #dadada; */
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 0 5vw;
+}
+.nav-part2{
+  display: flex;
+  gap: 4vw;
+  align-items: center;
+}
+.nav h2{
+  font-size: 3vw;
+  font-weight: 700px;
+}
+.nav h4{
+  font-weight:400px ;
+}
+.nav i{
+  font-size: 2.2vw;
+  display: none;
+}
+
+.nav button{
+  border: none;
+  padding: 1.1vw 1vw;
+  background-color: #6FC183;
+  font-weight: 700;
+  color: white;
+  border-radius: 4px;
+}
+.contant{
+  height: calc(100% - 80px);
+  width: 100%;
+  display: flex;
+}
+.left{
+  height: 88vh;
+  width: 55%;
+ 
+  padding: 5vw 5vw;
+}
+.left h1{
+  font-size: 4.2vw;
+  line-height: 4.4vw;
+}
+.left h1 span{
+  color: #6FC183;
+
+}
+.left p {
+  font-size: 1.4vw;
+  margin-top: 1.6vw;
+  margin-bottom: 2vw;
+  line-height: 1.9vw;
+  width: 80%;
+  color: #666;
+  font-weight: 600;
+
+}
+.left button{
+  border : 2px solid currentColor;
+  border-radius :3rem;
+  color: #fff3f3;
+  font-weight: 700;
+  background-color: #444644;
+  font-family :roboto;
+  font-size :1rem;
+  font-weight :100;
+  overflow: hidden;
+  padding :1rem 2rem;
+  position:relative;
+  text-decoration: none;
+  transition :.2s transform ease-in-out;
+  will-change  :transform;
+  z-index: 0;}
+  
+  .left button::after{
+    background-color :#6FC183;
+    border-radius :3rem;
+    content: '';
+    display :block;
+    height :100%;
+    width :100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform :translate(-100%, 0) rotate(10deg);
+    transform-origin :top left;
+    transition :.2s transform ease-out;
+    will-change :transform;
+    z-index :-1;
+  }
+    
+  .left button:hover::after{
+    transform :translate(0, 0);}
+    
+  .left button:hover{
+    border: 2px solid transparent;
+    color :rgb(0, 0, 0);
+    font-weight: 700;
+    border-radius :3rem;
+    transform :scale(1.05);
+    will-change :transform;
+  cursor: pointer;
+}
+  
+
+/* .left button{
+  border: none;
+  padding: 1.3vw 2.2vw;
+  background-color: #6FC183;
+  font-weight: 700;
+  color: white;
+  border-radius: 4px;
+  
+} */
+
+.right{
+  height: 88vh;
+  width: 45%;
+ 
+}
+.right img {
+  width: 100%;
+  margin-top: 10vw;
+}
+@media (max-width:600px) {
+  .nav{
+    padding: 0 7vw;
+    height: 60PX;
+    position: relative;
+    
+  }
+  .nav h2{
+    font-size: 8vw;
+    padding: 4vw 5vw;
+  }
+  .nav h4{
+    font-size: 4vw;
+    display: none;
+    
+
+     
+    
+  }
+
+  .nav button{
+    display: none;
+  }
+  .nav i {
+    display: block;
+    font-size: 6vw;
+    font-weight: 800;
+  }
+  .contant{
+    flex-direction: column;
+    height: calc(100% - 60PX);
+    padding: 4vw 5vw;
+  }
+  .left{
+    height: 50vh;
+    width: 100%;
+
+  }
+  .left h1{
+    font-size: 10vw;
+    line-height: 11vw;
+  }
+  .left p{
+    font-size: 4vw;
+    line-height: 5vw;
+    width: 100%;
+    margin-bottom: 4vw;
+  }
+  .right{
+    height: 50vh;
+    width: 100%;
+  }
+  .contant button{
+    padding: 4vw 6vw;
+    border-radius: 3px;
+    font-size: 3.5vw;
+    font-weight: 700;
+  }
+ 
+}
+
+
